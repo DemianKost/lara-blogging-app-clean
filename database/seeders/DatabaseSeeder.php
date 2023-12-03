@@ -6,13 +6,23 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Database\Seeders\DefaultUserSeeder;
+use App\Models\User;
+use App\Models\Post;
 
 class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        $this->call(
-            class: DefaultUserSeeder::class
-        );
+        // $this->call(
+        //     class: DefaultUserSeeder::class
+        // );
+
+        Post::factory(20)->for(
+            User::factory()->create([
+                'first_name' => 'Mike',
+                'last_name' => 'Jordan',
+                'email' => 'test@example.com'
+            ])
+        )->create();
     }
 }
