@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Models\Concerns;
+namespace Domain\Shared\Models\Concerns;
 
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;

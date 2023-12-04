@@ -6,8 +6,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Database\Seeders\DefaultUserSeeder;
-use App\Models\User;
-use App\Models\Post;
+use Domain\Shared\Models\User;
+use Domain\Blogging\Models\Post;
 
 class DatabaseSeeder extends Seeder
 {

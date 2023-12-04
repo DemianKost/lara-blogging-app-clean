@@ -1,5 +1,7 @@
 <?php
 
+use Tests\TestCase;
+
 /*
 |--------------------------------------------------------------------------
 | Test Case
@@ -12,9 +14,9 @@
 */
 
 uses(
-    Tests\TestCase::class,
+    TestCase::class,
     // Illuminate\Foundation\Testing\RefreshDatabase::class,
-)->in('Feature');
+)->in('API');
 
 /*
 |--------------------------------------------------------------------------

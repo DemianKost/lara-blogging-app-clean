@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Models;
+namespace Domain\Shared\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use App\Models\Concerns\HasKey;
-use App\Models\Post;
+use Domain\Shared\Models\Concerns\HasKey;
+use Domain\Blogging\Models\Post;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
