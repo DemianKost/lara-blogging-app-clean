@@ -9,7 +9,8 @@ class PostValueObject
     public function __construct(
         public string $title,
         public null|string $body = null,
-        public null|string $description = null
+        public null|string $description = null,
+        public null|bool $published = false
     ) {
 
     }
@@ -19,7 +20,8 @@ class PostValueObject
         return [
             'title' => $this->title,
             'body' => $this->body,
-            'description' => $this->description
+            'description' => $this->description,
+            'published' => $this->published
         ];
     }
 }
