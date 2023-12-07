@@ -6,13 +6,15 @@ use App\Http\Controllers\Controller;
 use Domain\Blogging\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use App\Jobs\DeletePost as DeletePostJob;
 
 class DeleteController extends Controller
 {
     public function __invoke(Request $request, Post $post): Response
     {
-        // delete resource - move this to job
-        $post->delete();
+        DeletePostJob::dispatch(
+            $post
+        );
 
         return response(
             content: null,
