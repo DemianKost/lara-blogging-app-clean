@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs\Posts;
+namespace Domain\Blogging\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;

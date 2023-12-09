@@ -12,7 +12,7 @@ use Domain\Blogging\Actions\UpdatePost as UpdatePostAction;
 use Domain\Blogging\Factories\PostFactory;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use App\Jobs\Posts\UpdatePost;
+use Domain\Blogging\Jobs\UpdatePost;
 
 class UpdateController extends Controller
 {

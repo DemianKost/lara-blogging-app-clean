@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Domain\Blogging\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use App\Jobs\DeletePost as DeletePostJob;
+use Domain\Blogging\Jobs\DeletePost as DeletePostJob;
 
 class DeleteController extends Controller
 {
